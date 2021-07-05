@@ -1,0 +1,35 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid-Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h3 style="margin-top: 20px;">Login</h3>
+
+        <form onsubmit="return false">
+            <label class="label-hidden" id="lbUser">Usuário</label><br>
+            <input class="inputStyle" placeholder="Usuário" onkeyup="showLabelUser();" required>
+            <br>
+            <label class="label-hidden" id="lbPass">Senha</label><br>
+            <input type="password" class="inputStyle" placeholder="Senha" onkeyup="showLabelPass();" required>
+            <br>
+            <button class="btLG" id="btLG">Login</button>
+        </form>
+        <p style="color: white;font-style: italic;cursor: pointer;"><u>Recuperar Senha</u></p>
+    </div>
+
+    <script>
+        function showLabelUser(){
+            document.getElementById("lbUser").style.opacity = 1;
+        }
+
+        function showLabelPass(){
+            document.getElementById("lbPass").style.opacity = 1;
+        }
+    </script>
+</body>
+</html>
